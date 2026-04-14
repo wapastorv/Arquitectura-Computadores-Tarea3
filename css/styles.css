@@ -581,23 +581,72 @@ h2::after {
 }
 
 /* Responsive */
+@media (min-width: 1600px) {
+  .slide-content {
+    gap: 40px;
+  }
+  .calculator-container,
+  .interactive-card,
+  .system-box,
+  .arch-component,
+  .step-content,
+  .comparison-table th,
+  .comparison-table td {
+    padding: 30px;
+  }
+  .cards-grid,
+  .number-systems,
+  .registers-grid,
+  .architecture-diagram {
+    gap: 30px;
+  }
+  .nav-controls {
+    bottom: 40px;
+    right: 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .slide {
+    padding: 30px;
+  }
+  .slide-content {
+    max-width: 100%;
+    gap: 28px;
+  }
+  .number-systems {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .registers-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .architecture-diagram {
+    grid-template-columns: 1fr 1.5fr;
+  }
+  .calc-input,
+  .calc-select {
+    min-width: 180px;
+  }
+}
+
 @media (max-width: 1024px) {
   .slide {
-    padding: 30px 20px;
+    padding: 28px 22px;
   }
   .slide-content {
     gap: 25px;
   }
   .cards-grid,
   .registers-grid {
-    gap: 20px;
+    gap: 22px;
   }
   .architecture-diagram {
     gap: 20px;
   }
   .comparison-table th,
   .comparison-table td,
-  .calculator-container {
+  .calculator-container,
+  .step-content {
     padding: 18px;
   }
   .calc-input,
