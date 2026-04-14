@@ -581,24 +581,130 @@ h2::after {
 }
 
 /* Responsive */
+@media (max-width: 1024px) {
+  .slide {
+    padding: 30px 20px;
+  }
+  .slide-content {
+    gap: 25px;
+  }
+  .cards-grid,
+  .registers-grid {
+    gap: 20px;
+  }
+  .architecture-diagram {
+    gap: 20px;
+  }
+  .comparison-table th,
+  .comparison-table td,
+  .calculator-container {
+    padding: 18px;
+  }
+  .calc-input,
+  .calc-select,
+  .calc-btn {
+    font-size: 1rem;
+  }
+  .calc-input,
+  .calc-select {
+    min-width: 150px;
+    padding: 12px;
+  }
+  .calc-btn {
+    padding: 12px 28px;
+  }
+  .tabs-header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+  .presentation-container {
+    height: 100vh;
+  }
+  .slide {
+    padding: 20px 15px;
+  }
+  .slide-content {
+    gap: 20px;
+  }
   h1 {
     font-size: 2rem;
   }
   h2 {
     font-size: 1.5rem;
   }
-  .number-systems {
-    grid-template-columns: 1fr;
+  .subtitle {
+    font-size: 1rem;
+    margin-top: -10px;
   }
+  .cards-grid,
+  .number-systems,
   .registers-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
   }
   .architecture-diagram {
     grid-template-columns: 1fr;
   }
   .arch-component.cpu {
     grid-column: 1;
+  }
+  .calculator-container {
+    padding: 20px;
+  }
+  .calc-input,
+  .calc-select,
+  .calc-btn {
+    width: 100%;
+  }
+  .calc-input,
+  .calc-select {
+    min-width: 0;
+  }
+  .calc-input-group {
+    gap: 10px;
+  }
+  .comparison-table th,
+  .comparison-table td {
+    padding: 12px;
+  }
+  .tabs-header {
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  .tab-btn {
+    padding: 12px 18px;
+    font-size: 0.95rem;
+    min-width: 100px;
+    flex: 1;
+  }
+  .nav-controls {
+    bottom: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    gap: 10px;
+  }
+  .nav-btn {
+    width: 34px;
+    height: 34px;
+    font-size: 14px;
+  }
+  .comparison-table {
+    font-size: 0.9rem;
+  }
+  .slide-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .calculator-container,
+  .arch-component,
+  .interactive-card,
+  .system-box {
+    padding: 18px;
   }
 }
 
